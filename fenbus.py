@@ -1,8 +1,13 @@
 # _*_ coding:utf-8 _*_
+
 """
-liuzujun 股票详情 2019.01.15
-分布式运算
+分布式运算 抓取股票详情
 """
+
+__time__ = "2019.01.15"
+__author__ = "open_china"
+
+import os
 import sys
 import time
 
@@ -11,8 +16,8 @@ import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 from celery import group
+
 from wtask import down
-import os
 
 
 class GupiaoSpider(object):
@@ -27,7 +32,6 @@ class GupiaoSpider(object):
         self.timeout = 100
         if not os.path.exists(self.Recordpath):
             os.makedirs(self.Recordpath)
-
 
     def getTotalUrl(self):
         try:

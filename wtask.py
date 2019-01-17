@@ -2,10 +2,11 @@
 
 """"
 分布式爬虫
-2019.01.15
+write the code , change the world
 """
 
-__author = "liuzujun"
+__author = "open_china"
+__time__ = "2019.01.15"
 
 import json
 import time
