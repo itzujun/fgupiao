@@ -8,7 +8,7 @@
 ```
  .\redis-server.exe .\redis.windows.conf
 ```
-![image](bmp\redis.png)
+![image](https://github.com/itzujun/fgupiao/blob/master/bmp/redis.png)
 
 ### 启动 worker
 
@@ -16,7 +16,7 @@
 celery -A wtask worker --loglevel=info
 ```
 
-![image](bmp\worker.jpg)
+![image](https://github.com/itzujun/fgupiao/blob/master/bmp/worker.jpg)
 
 ### 运行客户端
 ```
@@ -24,10 +24,10 @@ python fenbus.py  #运行客户端
 ```
 
 ### 运行效果图
-![image](bmp\online.jpg)
+![image](https://github.com/itzujun/fgupiao/blob/master/bmp/online.jpg)
 
 ### 运行结果
-![image](bmp\result.jpg)
+![image](https://github.com/itzujun/fgupiao/tree/master/bmp/result.jpg)
 
 
 
