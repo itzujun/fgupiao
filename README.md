@@ -27,7 +27,7 @@ python fenbus.py  #运行客户端
 ![image](https://github.com/itzujun/fgupiao/blob/master/bmp/online.jpg)
 
 ### 运行结果
-![image](https://github.com/itzujun/fgupiao/tree/master/bmp/result.jpg)
+![image](https://github.com/itzujun/fgupiao/blob/master/bmp/result.jpg)
 
 
 
