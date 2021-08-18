@@ -4,6 +4,7 @@ import json
 import pandas as pd
 import time
 import datetime
+import os
 
 
 class GuPiao():
@@ -50,5 +51,10 @@ if __name__ == "__main__":
         print("正在下载 {page} 数据 ...".format(page=len(li)))
         pass
     df = pd.DataFrame(li)
+
+    file = "./files"
+    if os.path.isfile(file) is False:
+        os.mkdir(file)
+
     df.to_excel("./files/" + gu.date + '排名.xlsx', index=False)
     print("save success")
