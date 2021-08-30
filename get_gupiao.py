@@ -45,7 +45,7 @@ class GuPiao():
 if __name__ == "__main__":
     gu = GuPiao()
     li = []
-    for i in range(180):
+    for i in range(100):
         temp_li = gu.get_data(i + 1)
         li = li + temp_li
         print("正在下载 {page} 数据 ...".format(page=len(li)))
@@ -53,7 +53,7 @@ if __name__ == "__main__":
     df = pd.DataFrame(li)
 
     file = "./files"
-    if os.path.isfile(file) is False:
+    if os.path.exists(file) is False:
         os.mkdir(file)
 
     df.to_excel("./files/" + gu.date + '排名.xlsx', index=False)
